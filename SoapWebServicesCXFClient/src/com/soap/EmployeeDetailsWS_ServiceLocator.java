@@ -22,7 +22,7 @@ public class EmployeeDetailsWS_ServiceLocator extends org.apache.axis.client.Ser
     }
 
     // Use to get a proxy class for EmployeeDetailsWSPort
-    private java.lang.String EmployeeDetailsWSPort_address = "http://192.168.1.28:8090/SoapWebServicesCXF/services/EmployeeDetailsWSPort";
+    private java.lang.String EmployeeDetailsWSPort_address = "http://127.0.0.1:8090/SoapWebServicesCXF/services/EmployeeDetailsWSPort";
 
     public java.lang.String getEmployeeDetailsWSPortAddress() {
         return EmployeeDetailsWSPort_address;

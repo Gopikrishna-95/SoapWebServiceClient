@@ -44,16 +44,16 @@ public class EmployeeDetailsWSProxy implements com.soap.EmployeeDetailsWS_PortTy
     return employeeDetailsWS_PortType;
   }
   
-  public com.soap.Employee getEmpDetails(int arg0, int arg1) throws java.rmi.RemoteException{
-    if (employeeDetailsWS_PortType == null)
-      _initEmployeeDetailsWSProxy();
-    return employeeDetailsWS_PortType.getEmpDetails(arg0, arg1);
-  }
-  
   public com.soap.Employee getXmlElement(java.lang.String arg0) throws java.rmi.RemoteException{
     if (employeeDetailsWS_PortType == null)
       _initEmployeeDetailsWSProxy();
     return employeeDetailsWS_PortType.getXmlElement(arg0);
+  }
+  
+  public com.soap.Employee getEmpDetails(int arg0, int arg1) throws java.rmi.RemoteException{
+    if (employeeDetailsWS_PortType == null)
+      _initEmployeeDetailsWSProxy();
+    return employeeDetailsWS_PortType.getEmpDetails(arg0, arg1);
   }
   
   
